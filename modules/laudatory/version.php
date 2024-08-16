@@ -15,9 +15,9 @@ if (!defined('NV_ADMIN') or !defined('NV_MAINFILE')) {
 
 $module_version = [
     'name' => 'Quản lý khen thưởng', // Tieu de module
-    'modfuncs' => 'main, list-lau-year,list-laudatory-month,department_category',
-    'change_alias' => 'main, list-lau-year,list-laudatory-month,department_category',
-    'submenu' => 'main, list-lau-year,list-laudatory-month,department_category',  // Các fun hỗ trợ tạo menu con
+    'modfuncs' => 'main, list-lau-year, list-laudatory-month, department_category',
+    'change_alias' => 'main, list-lau-year,list-laudatory-month, department_category',
+    'submenu' => 'main, list-lau-year, department_category',  // Các fun hỗ trợ tạo menu con
     'is_sysmod' => 0,  // 1:0 => Co phai la module he thong hay khong
     'virtual' => 0, // 1:0 => Co cho phep ao hao module hay khong
     'version' => '4.6.00',
