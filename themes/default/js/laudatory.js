@@ -1384,7 +1384,7 @@
           'stroke-width': strokeWidth !== null ? strokeWidth : 0,
           stroke: strokeColor !== null ? strokeColor : 'none',
           'stroke-dasharray': strokeDashArray
-        }); // fix apexcharts.js#1410
+        }); // fix laudatory.js#1410
 
         rect.node.setAttribute('fill', color);
         return rect;
@@ -2974,7 +2974,7 @@
     }, {
       key: "_getYAxisAnnotationWidth",
       value: function _getYAxisAnnotationWidth(anno) {
-        // issue apexcharts.js#2009
+        // issue laudatory.js#2009
         var w = this.w;
         var width = w.globals.gridWidth;
 
@@ -4357,7 +4357,7 @@
             w.globals.dom.elGraphical.add(annoArray[i]);
 
             if (initialAnim && !w.globals.resized && !w.globals.dataChanged) {
-              // fixes apexcharts/apexcharts.js#685
+              // fixes apexcharts/laudatory.js#685
               if (w.config.chart.type !== 'scatter' && w.config.chart.type !== 'bubble' && w.globals.dataPoints > 1) {
                 annoElArray[i].classList.add('apexcharts-element-hidden');
               }
@@ -11066,7 +11066,7 @@
 
         if (w.globals.isMultipleYAxis || w.globals.collapsedSeries.length) {
           // The autoScale option for multiple y-axis is turned off as it leads to buggy behavior.
-          // Also, when a series is collapsed, it results in incorrect behavior. Hence turned it off for that too - fixes apexcharts.js#795
+          // Also, when a series is collapsed, it results in incorrect behavior. Hence turned it off for that too - fixes laudatory.js#795
           console.warn('autoScaleYaxis is not supported in a multi-yaxis chart.');
           return yaxis;
         }
@@ -11366,7 +11366,7 @@
             if (typeof yaxe.max === 'number') {
               gl.maxYArr[index] = yaxe.max;
             } else if (typeof yaxe.max === 'function') {
-              // fixes apexcharts.js/issues/2098
+              // fixes laudatory.js/issues/2098
               gl.maxYArr[index] = yaxe.max(gl.isMultipleYAxis ? gl.maxYArr[index] : gl.maxY);
             } // gl.maxY is for single y-axis chart, it will be ignored in multi-yaxis
 
@@ -11378,7 +11378,7 @@
             if (typeof yaxe.min === 'number') {
               gl.minYArr[index] = yaxe.min;
             } else if (typeof yaxe.min === 'function') {
-              // fixes apexcharts.js/issues/2098
+              // fixes laudatory.js/issues/2098
               gl.minYArr[index] = yaxe.min(gl.isMultipleYAxis ? gl.minYArr[index] === Number.MIN_VALUE ? 0 : gl.minYArr[index] : gl.minY);
             } // gl.minY is for single y-axis chart, it will be ignored in multi-yaxis
 
@@ -11628,7 +11628,7 @@
             });
 
             if (gl.dataPoints === 1 || gl.minXDiff === Number.MAX_VALUE) {
-              // fixes apexcharts.js #1221
+              // fixes laudatory.js #1221
               gl.minXDiff = 0.5;
             }
           });
@@ -13483,7 +13483,7 @@
           if (w.globals.ignoreYAxisIndexes.indexOf(index) === -1 && !yaxe.floating && !axesUtils.isYAxisHidden(index)) {
             if (yaxe.opposite) {
               w.globals.translateX = w.globals.translateX - (yaxisLabelCoords[index].width + yTitleCoords[index].width) - parseInt(w.config.yaxis[index].labels.style.fontSize, 10) / 1.2 - 12;
-            } // fixes apexcharts.js#1599
+            } // fixes laudatory.js#1599
 
 
             if (w.globals.translateX < 2) {
@@ -15127,7 +15127,7 @@
           // zoom is Enabled and user has dragged, so draw blue rect
 
           if (w.globals.zoomEnabled && this.dragged) {
-            if (width < 0) width = 1; // fixes apexcharts.js#1168
+            if (width < 0) width = 1; // fixes laudatory.js#1168
 
             zoomRect.attr({
               x: x,
@@ -16788,7 +16788,7 @@
             bcx = bcx - (barLen % 2 !== 0 ? bw / 2 : 0);
           }
 
-          if (jBar && // fixes apexcharts.js#2354
+          if (jBar && // fixes laudatory.js#2354
           isBoxOrCandle && w.globals.comboCharts) {
             bcx = bcx - bw / 2;
           }
@@ -16875,7 +16875,7 @@
 
             var elPointOptions = marker.getMarkerConfig({
               cssClass: PointClasses,
-              seriesIndex: Number(pointsMain.getAttribute('data:realIndex')) // fixes apexcharts/apexcharts.js #1427
+              seriesIndex: Number(pointsMain.getAttribute('data:realIndex')) // fixes apexcharts/laudatory.js #1427
 
             });
             point = graphics.drawMarker(0, 0, elPointOptions);
@@ -20258,7 +20258,7 @@
           barWidth = xDivision;
 
           if (w.globals.isXNumeric && w.globals.dataPoints > 1) {
-            // the check (w.globals.dataPoints > 1) fixes apexcharts.js #1617
+            // the check (w.globals.dataPoints > 1) fixes laudatory.js #1617
             xDivision = w.globals.minXDiff / this.xRatio;
             barWidth = xDivision * parseInt(this.barOptions.columnWidth, 10) / 100;
           } else {
@@ -23923,7 +23923,7 @@
 
           if (w.config.chart.stacked) {
             if (i > 0 && w.globals.collapsedSeries.length < w.config.series.length - 1) {
-              // a collapsed series in a stacked bar chart may provide wrong result for the next series, hence find the prevIndex of prev series which is not collapsed - fixes apexcharts.js#1372
+              // a collapsed series in a stacked bar chart may provide wrong result for the next series, hence find the prevIndex of prev series which is not collapsed - fixes laudatory.js#1372
               var prevIndex = function prevIndex(pi) {
                 var pii = pi;
 
@@ -24187,7 +24187,7 @@
         var w = this.w;
 
         if (series[i][j] === null && w.config.markers.showNullDataPoints || series[i].length === 1) {
-          // fixes apexcharts.js#1282, #1252
+          // fixes laudatory.js#1282, #1252
           var elPointsWrap = this.markers.plotChartMarkers(pointsPos, realIndex, j + 1, this.strokeWidth - w.config.markers.strokeWidth / 2, true);
 
           if (elPointsWrap !== null) {
@@ -25266,7 +25266,7 @@
           date = firstVal.minDate;
           numberOfDays++;
         } else if (firstVal.minDate !== 1 && firstVal.minHour === 0 && firstVal.minMinute === 0) {
-          // fixes apexcharts/apexcharts.js/issues/1730
+          // fixes apexcharts/laudatory.js/issues/1730
           firstTickPosition = 0;
           firstTickValue = firstVal.minDate;
           date = firstTickValue;
@@ -26028,7 +26028,7 @@
 
         if (gl.dom.elLegendForeign) {
           gl.dom.elLegendForeign.setAttribute('height', newHeight);
-        } // fix apexcharts/apexcharts.js/issues/3105 (when % is provided in height, it keeps increasing)
+        } // fix apexcharts/laudatory.js/issues/3105 (when % is provided in height, it keeps increasing)
 
 
         if (w.config.chart.height && String(w.config.chart.height).indexOf('%') > 0) return;
@@ -32242,7 +32242,7 @@
         var _this = this;
 
         var isUpdating = _ref2.isUpdating;
-        var elSVG = this.w.globals.dom.Paper.node; // fixes apexcharts.js#1654 & vue-apexcharts#256
+        var elSVG = this.w.globals.dom.Paper.node; // fixes laudatory.js#1654 & vue-apexcharts#256
 
         if (elSVG.parentNode && elSVG.parentNode.parentNode && !isUpdating) {
           elSVG.parentNode.parentNode.style.minHeight = 'unset';
@@ -32704,7 +32704,7 @@
         var updateSyncedCharts = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
         var overwriteInitialConfig = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : true;
         var w = this.w; // when called externally, clear some global variables
-        // fixes apexcharts.js#1488
+        // fixes laudatory.js#1488
 
         w.globals.selection = undefined;
 

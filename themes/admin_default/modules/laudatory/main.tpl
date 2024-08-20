@@ -1,5 +1,5 @@
 <!-- BEGIN: main -->
-<script src="{LINK_CHART}/js/apexcharts.js"></script>
+<script src="{LINK_CHART}/js/laudatory.js"></script>
 <div class="main-container">
     <div class="notification">
         <div class="notification-header">{TOTAL}</div>

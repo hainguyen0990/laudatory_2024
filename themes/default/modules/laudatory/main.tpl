@@ -1,7 +1,7 @@
 <!-- BEGIN: main -->
 <div id="chart"></div>
 <h2 class="text-center">{LANG.top_10}</h2>
-<script src="{LINK_CHART}/js/apexcharts.js"></script>
+<script src="{LINK_CHART}/js/laudatory.js"></script>
 <script>
     var options = {
         chart: {
