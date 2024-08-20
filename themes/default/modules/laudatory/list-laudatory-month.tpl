@@ -33,7 +33,7 @@
         <div class="grid-container">
             <!-- BEGIN: loop -->
             <div class="grid-item">
-                <div class="background-img" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;background-image: url('{NV_ASSETS_DIR}/background.jpg')">
+                <div class="background-img" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;background-image: url('{NV_STATIC_URL}themes/default/images/laudatory/background.jpg')">
                     <div class="profile-container" style="display: flex; flex-direction: column; align-items: center;">
                         <img src="{ROW.image}" alt="Profile Image" class="profile-image img-circle img-responsive">
                         <p class="name">{ROW.name_employee}</p>

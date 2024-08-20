@@ -71,7 +71,7 @@
                         var image = employee.image || '{NV_STATIC_URL}themes/default/images/users/no_avatar.png';
 
                         contentHtml += '<div class="grid-item">';
-                        contentHtml += '<div class="background-img" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;background-image: url(\'{NV_ASSETS_DIR}/background.jpg\')">';
+                        contentHtml += '<div class="background-img" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;background-image: url(\'{NV_STATIC_URL}themes/default/images/laudatory/background.jpg\')">';
                         contentHtml += '<div class="profile-container" style="display: flex; flex-direction: column; align-items: center;">';
                         contentHtml += '<img src="' + image + '" alt="Profile Image" class="profile-image img-circle img-responsive">';
                         contentHtml += '<p class="name">' + name + '</p>';
@@ -130,7 +130,7 @@
                             var image = employee.image;
 
                             contentHtml += '<div class="grid-item">';
-                            contentHtml += '<div class="background-img" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;background-image: url(\'{NV_ASSETS_DIR}/background.jpg\')">';
+                            contentHtml += '<div class="background-img" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;background-image: url(\'{NV_STATIC_URL}themes/default/images/laudatory/background.jpg\')">';
                             contentHtml += '<div class="profile-container" style="display: flex; flex-direction: column; align-items: center;">';
                             contentHtml += '<img src="' + image + '" alt="Profile Image" class="profile-image img-circle img-responsive">';
                             contentHtml += '<p class="name">' + name + '</p>';
