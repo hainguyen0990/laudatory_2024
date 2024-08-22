@@ -1,3 +1,9 @@
+### Cách cài đặt module
+B1: Tải file zip hoặc clone module về máy 
+B2: Giải nén file zip nếu tải file 
+B3: Đóng gói 3 thư mục (themes, modules, config.ini) thành file zip 
+B4: Vào mở rộng tải lên flie zip vừa đóng gói 
+
 ### Công việc của em Hải:
 ```
 *** Chức năng trong admin
