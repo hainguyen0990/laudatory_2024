@@ -1,5 +1,3 @@
-### Thư viện apexcharts.js được đổi tên thành laudatory.js
-
 ### Công việc của em Hải:
 ```
 *** Chức năng trong admin
