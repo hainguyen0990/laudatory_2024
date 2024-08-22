@@ -1,4 +1,4 @@
-Module Laudatory hay module quản lí khen thưởng dùng để khen thưởng cho nhân viên hay phòng ban nào đó có thành tích xuất sắc trong công việc .
+Module Laudatory hay module quản lí khen thưởng dùng để khen thưởng cho nhân viên trong phòng ban nào đó có thành tích xuất sắc trong công việc .
 
 ### Cách cài đặt module
 ```
