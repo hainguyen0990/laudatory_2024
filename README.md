@@ -1,3 +1,5 @@
+Module Laudatory hay module quản lí khen thưởng dùng để khen thưởng cho nhân viên hay phòng ban nào đó có thành tích xuất sắc trong công việc .
+
 ### Cách cài đặt module
 ```
 B1: Tải file zip hoặc clone module về máy 
