@@ -20,10 +20,9 @@ if (!defined('NV_ADMIN') or !defined('NV_MAINFILE')) {
 }
 
 /**
- * NukeViet\Module\intern\Api\InternGetGroup
- * API dùng để hiện thị danh sách group
+ * API dùng để hiện thị danh sách danh mục
  *
- * @package NukeViet\Module\intern\Api
+ * @package NukeViet\Module\laudatory\Api
  * @author VINADES.,JSC <contact@vinades.vn>
  * @copyright (C) 2009-2022 VINADES.,JSC. All rights reserved
  * @version 4.6.00
